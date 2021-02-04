@@ -5,13 +5,6 @@ import ParentView from '@/components/ParentView';
 
 const permission = {
   state: {
-    /**
-     * routers: 所有的路由
-     * addRoutes: 异步添加的路由
-     * sidebarRouters: 
-     */
-
-     
     routes: [],
     addRoutes: [],
     sidebarRouters: []
@@ -30,18 +23,15 @@ const permission = {
     GenerateRoutes({ commit }) {
       return new Promise(resolve => {
         // 向后端请求路由数据
-        getRouters().then(res => { 
+        getRouters().then(res => {
           const sdata = JSON.parse(JSON.stringify(res.data))
           const rdata = JSON.parse(JSON.stringify(res.data))
           const sidebarRoutes = filterAsyncRouter(sdata)
           const rewriteRoutes = filterAsyncRouter(rdata, true)
-
-          console.log('sidebarRoutes', sidebarRoutes)
-          console.log('rewriteRoutes', rewriteRoutes)
           rewriteRoutes.push({ path: '*', redirect: '/404', hidden: true })
           commit('SET_ROUTES', rewriteRoutes)
           commit('SET_SIDEBAR_ROUTERS', sidebarRoutes)
-          resolve(rewriteRoutes) 
+          resolve(rewriteRoutes)
         })
       })
     }

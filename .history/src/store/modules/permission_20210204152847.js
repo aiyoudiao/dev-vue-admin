@@ -5,13 +5,6 @@ import ParentView from '@/components/ParentView';
 
 const permission = {
   state: {
-    /**
-     * routers: 所有的路由
-     * addRoutes: 异步添加的路由
-     * sidebarRouters: 
-     */
-
-     
     routes: [],
     addRoutes: [],
     sidebarRouters: []
@@ -41,7 +34,7 @@ const permission = {
           rewriteRoutes.push({ path: '*', redirect: '/404', hidden: true })
           commit('SET_ROUTES', rewriteRoutes)
           commit('SET_SIDEBAR_ROUTERS', sidebarRoutes)
-          resolve(rewriteRoutes) 
+          resolve(rewriteRoutes)
         })
       })
     }

@@ -9,8 +9,7 @@ const state = {
   showSettings: showSettings,
   tagsView: tagsView,
   fixedHeader: fixedHeader,
-  sidebarLogo: sidebarLogo,
-  defaultSettings: defaultSettings
+  sidebarLogo: sidebarLogo
 }
 
 const mutations = {

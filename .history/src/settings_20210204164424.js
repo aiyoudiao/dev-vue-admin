@@ -2,11 +2,12 @@ module.exports = {
   title: '智能分析平台',
 
   info: {
-    title: 'dev-vue-admin',
+    title: 'nx-admin',
     list: [
-      'dev-vue-admin 是一个基于XXXX工程可视化管理平台，采用token交互验证方式。',
-      '您可以 dev-vue-admin 为基础，不只限制于vue的页面，你可以嵌入任意第三方网站，基于iframe框架。',
-      'dev-vue-admin 构建简单上手快，最大程度上帮助企业节省时间成本和费用开支。'
+      'nx-admin 是一个基于XXXX工程可视化管理平台，采用token交互验证方式。',
+      '您可以 nx-admin 为基础，不只限制于vue的页面，你可以嵌入任意第三方网站，基于iframe框架。',
+      'nx-admin 构建简单上手快，最大程度上帮助企业节省时间成本和费用开支。',
+      '技术答疑QQ群，为了提高入群的门槛，象征性收取0.9元：493671066'
     ]
   },
 

@@ -10,8 +10,6 @@ const permission = {
      * addRoutes: 异步添加的路由
      * sidebarRouters: 
      */
-
-     
     routes: [],
     addRoutes: [],
     sidebarRouters: []
